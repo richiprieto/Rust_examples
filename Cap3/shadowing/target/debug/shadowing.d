@@ -1,0 +1,1 @@
+/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/shadowing/target/debug/shadowing: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/shadowing/src/main.rs

@@ -1,0 +1,1 @@
+/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/variables/target/debug/variables: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/variables/src/main.rs
