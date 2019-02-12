@@ -1,0 +1,1 @@
+/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Others/fahrenheit_celsius/target/debug/fahrenheit_celsius: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Others/fahrenheit_celsius/src/main.rs
