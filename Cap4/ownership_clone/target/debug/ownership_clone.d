@@ -1,0 +1,1 @@
+/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap4/ownership_clone/target/debug/ownership_clone: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap4/ownership_clone/src/main.rs
