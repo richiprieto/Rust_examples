@@ -42,6 +42,16 @@ fn main() {
     y2.push_str(", y ahora mutado y2");
     println!("{}", y2);
 
+    //NOTA: tampoco se puede tener una referencia mutable
+    //si ya tenemos una inmutable
+    //el siguiente bloque nos devuelve un error en compilacion
+
+    /*
+    let z1 = &s;
+    let z2 = &s;
+    let z3 = &mut s;
+    */
+
 }
 
 fn change(s: &mut String){
