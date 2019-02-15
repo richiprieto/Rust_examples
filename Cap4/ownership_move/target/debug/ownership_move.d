@@ -1,0 +1,1 @@
+/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap4/ownership_move/target/debug/ownership_move: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap4/ownership_move/src/main.rs
