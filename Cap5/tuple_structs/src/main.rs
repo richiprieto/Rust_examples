@@ -2,7 +2,7 @@ fn main() {
     //las estructuras tupla no tienen nombres
     //asociados a colos campos, solo tienen tipos
     //son utiles cuando se necesita dar un nombre
-    //a la tupla y que sea diferente a otras
+    //a la tupla y que sea diferente a otras especificas
     struct Color(i32, i32, i32);
     struct Point(i32, i32, i32);
 
