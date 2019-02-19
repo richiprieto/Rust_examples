@@ -1,0 +1,1 @@
+/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap5/rectangles/target/debug/rectangles: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap5/rectangles/src/main.rs
