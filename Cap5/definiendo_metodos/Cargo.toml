@@ -1,0 +1,7 @@
+[package]
+name = "definiendo_metodos"
+version = "0.1.0"
+authors = ["richiprieto <richiprieto@crice.org>"]
+edition = "2018"
+
+[dependencies]
