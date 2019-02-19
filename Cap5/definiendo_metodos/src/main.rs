@@ -11,7 +11,8 @@ impl Rectangle{ //keyword impl significa implementacion
     fn area(&self) -> u32 { //el primer parametro siempre es self
         self.width * self.height
     }
-
+    //si se desea cambiar la instancia como primer parametor
+    // se utiliza &mut self
 }
 fn main() {
     let rect1 = Rectangle { width: 30, height: 50};
