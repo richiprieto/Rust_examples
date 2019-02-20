@@ -11,7 +11,7 @@ enum Coin {
 
 fn value_in_cents(coin: Coin) -> u32 {
     match coin {
-        Coin::Penny => {
+        Coin::Penny => { // si se necesita mas codigo se puede utilizar {}
             println!("Centavo");
             1 //retorna este valor
         },
