@@ -1,1 +1,0 @@
-/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap4/return_multiple_values/target/debug/return_multiple_values: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap4/return_multiple_values/src/main.rs
