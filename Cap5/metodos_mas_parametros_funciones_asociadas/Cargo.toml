@@ -1,0 +1,7 @@
+[package]
+name = "metodos_mas_parametros_funciones_asociadas"
+version = "0.1.0"
+authors = ["richiprieto <richiprieto@crice.org>"]
+edition = "2018"
+
+[dependencies]
