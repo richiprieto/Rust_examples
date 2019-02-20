@@ -1,1 +1,0 @@
-/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/compound_type_array/target/debug/compound_type_array: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/compound_type_array/src/main.rs

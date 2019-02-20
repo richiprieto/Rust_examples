@@ -1,1 +1,0 @@
-/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/branches/target/debug/branches: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/branches/src/main.rs

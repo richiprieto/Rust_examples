@@ -1,1 +1,0 @@
-/media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/scalar_type/target/debug/scalar_type: /media/DATA/Documentos/PersonalProjects/PracticaSoftware/Rust_examples/Cap3/scalar_type/src/main.rs
