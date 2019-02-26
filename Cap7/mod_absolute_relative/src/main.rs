@@ -22,3 +22,14 @@ fn main() {
 // el software no se ejecuta debido a que los modulos
 // son privados por default para solventar ese compile_error!
 // debemos usar el keyword pub
+
+// reglas de privacidad:
+// Todas las funciones metodos estructuras enums modulos y constantes
+// son privados por default
+
+// Se puede usar el metodo pub para hacerlos publicos
+
+// No estas permitido usar codigo privado definido en modulos hijos
+// del modulo actual
+
+// Estas permitido a usar cualquier codigo definido en modulos ancestros al modulo actual
