@@ -1,6 +1,6 @@
 mod sound {
-    pub mod instrument{
-        pub fn clarinete() {
+    pub mod instrument{ // se debe hace publica tanto el modulo
+        pub fn clarinete() { // como la funcion
             //Body
         }
     }
