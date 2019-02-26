@@ -27,7 +27,7 @@ fn main() {
 // Todas las funciones metodos estructuras enums modulos y constantes
 // son privados por default
 
-// Se puede usar el metodo pub para hacerlos publicos
+// Se puede usar el keyword pub para hacerlos publicos
 
 // No estas permitido usar codigo privado definido en modulos hijos
 // del modulo actual
