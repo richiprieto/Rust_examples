@@ -11,3 +11,9 @@ use std::{cmp::Ordering, io};
 fn main() {
     unimplemented!();
 }
+
+// tambien se puede definir de la siguiente manera
+// use std::io;
+// use std::io::Write;
+
+// use std::io::{self, Write};
