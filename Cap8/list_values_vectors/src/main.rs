@@ -1,5 +1,5 @@
 /*
-Crear un vector
+Crear un vector, la informacion es guardada en el heap
 */
 fn main() {
     // Crear un vector
