@@ -34,5 +34,23 @@ fn main() {
     // en este punto las variables nombre y valor han sido movido al hashmap mediante insert
     // si insertamos valores por referencia al hashmap los valores no seran movidos en propiedad
     // dentro del hashmap
-    
+
+    // Accediendo a valores en hash maps
+
+    let nombre_color = String::from("Azul");
+    let score = scores.get(&nombre_color);
+    println!("{:?}", score); // devuelve Some como respuesta
+
+    // Otra forma es mediante iteracion
+    for (key, value) in &scores {
+        println!("{}: {}", key, value);
+    }
+
+    // Sobre escribiendo un valor en hash map
+    let mut puntaje = HashMap::new();
+
+    puntaje.insert(String::from("Azul"), 10);
+    puntaje.insert(String::from("Azul"), 667); // sobre escribimos el valor
+    println!("{:?}", puntaje);
+
 }
