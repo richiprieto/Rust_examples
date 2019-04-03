@@ -53,4 +53,29 @@ fn main() {
     puntaje.insert(String::from("Azul"), 667); // sobre escribimos el valor
     println!("{:?}", puntaje);
 
+    // Insertar un valor si el key no tiene valor
+    let mut scores = HashMap::new();
+    scores.insert(String::from("Azul"), 10);
+
+    scores.entry(String::from("Azul")).or_insert(500);
+    scores.entry(String::from("Amarillo")).or_insert(100);
+
+    println!("{:?}", scores);
+    // El key entry inserta el parametro si la key no existe
+    // caso contrario el valor no varia
+
+    // Actualizar un valor basado en el antiguo valor
+    let text = "hola mundo maravilloso mundo";
+
+    let mut map = HashMap::new();
+
+    for word in text.split_whitespace(){
+        let count = map.entry(word).or_insert(0);
+        *count += 1;
+    }
+
+    println!("{:?}", map);
+    // El metodo or_insert retorna una referencia mutable &mut V al valor de esa key.
+    // Almacenams esa referencia mutable en la variable count en orden de asignacion de ese valor
+    // pero primero debemos derefenciar count usando (*)
 }
