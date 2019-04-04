@@ -1,0 +1,10 @@
+[package]
+name = "aborting_response_panic"
+version = "0.1.0"
+authors = ["richiprieto <richiprieto@crice.org>"]
+edition = "2018"
+
+[dependencies]
+
+[profile.release]
+panic = 'abort'
