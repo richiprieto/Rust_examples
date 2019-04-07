@@ -6,8 +6,9 @@ that occurs most often; a hash map will be helpful here) of the list.
 use std::collections::HashMap;
 
 fn main() {
-    // creamos el vector que sea mutable para poder usar el sort
-    let mut vector = [11, -2, 5, 23, 6, 423];
+    // creamos el vector o lista que sea mutable para poder usar el sort
+    let mut vector = vec![11, -2, 5, 23, 6, 423];
+    //let mut vector = [11, -2, 5, 23, 6, 423];
     // Obtenemos la media
     println!("Media: {}", media(&vector));
     // obtenemos la mediana
