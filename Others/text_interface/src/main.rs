@@ -12,8 +12,9 @@ fn main() {
         intro(); // Introduccion del software
         let input_value = input_text(); // Valida que el valor sea un numero
         match input_value { // Validamos las opciones
+            1 => add_user(),
             3 => break, // Salir con valor 3
-            _ => println!("valor {}", input_value),
+            _ => println!("No es una opcion valida."),
         };
     }
 }
@@ -26,7 +27,9 @@ fn intro(){
 }
 
 fn input_text() -> u8 {
+    // variable tipo string
     let mut input_text = String::new();
+    // ingreso el valor
     io::stdin()
         .read_line(&mut input_text)
         .expect("Falla a leer stdin");
@@ -40,4 +43,8 @@ fn input_text() -> u8 {
             return 3;
         },
     };
+}
+
+fn add_user() {
+
 }
