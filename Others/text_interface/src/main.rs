@@ -47,5 +47,4 @@ fn input_text() -> u8 {
 
 fn add_user() {
     println!("Ejemplo de Ingreso: Add Amir to Sales." );
-
 }
