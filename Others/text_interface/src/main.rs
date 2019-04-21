@@ -6,6 +6,7 @@ in a department or all people in the company by department, sorted
 alphabetically.
 */
 use std::io;
+use std::collections::HashMap;
 
 fn main() {
     loop {
