@@ -5,3 +5,4 @@ authors = ["richiprieto <richiprieto@crice.org>"]
 edition = "2018"
 
 [dependencies]
+colored = "1.7.0"
