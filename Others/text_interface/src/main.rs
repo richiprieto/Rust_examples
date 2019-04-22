@@ -51,28 +51,76 @@ fn input_text() -> String {
     trimmed.to_string()
 }
 
-fn add_user() {
+fn add_user(persona_departamento: &mut HashMap<String,String>) { // pasamos un hashmap mutable como parametro
 
-    let mut book_reviews = HashMap<&str, &str>::new();
     loop {
-        println!("{}", "Ejemplo de Ingreso: Add Amir to Sales or Add Sally to Engineering".green());
+        println!("{}", "Ejemplo de ingreso: 'Add Amir to Sales' or 'Add Sally to Engineering'".green());
+        println!("{}", "Para regresar escriba 'regresar'".green());
+
         let input_text = input_text(); // Ingreso de texto
         let v: Vec<&str> = input_text.split(' ').collect(); // Lo spliteamos y agregamos a un vector
-        if v[0].to_lowercase() == "add" && v[2].to_lowercase() == "to"{
-            println!("simon");
+
+        if v.len() == 4 && v[0].to_lowercase() == "add" && v[2].to_lowercase() == "to"{ //comparamos que cumpla con el protocolo para agregar
+            persona_departamento.insert(v[1].to_string(), v[3].to_string()); // inserta data
+            println!("{}", "Persona insertada".yellow());
+            println!("{:?}", persona_departamento);
+            break;
+        } else if v[0].to_lowercase() == "regresar" { // opcion para regresar
+            break;
+        } else {
+            println!("{}", "El texto ingresado no es valido por favor verifique".red()); // en caso que no cumpla el protocolo de agregar
         }
-        break;
+    }
+}
+
+fn intro_consulta(){
+    println!("{}", "Escoja como observar los datos:".green());
+    println!("1) Personas en departamento especifico");
+    println!("2) Personas en la compañia por departamento");
+    println!("3) Salir");
+}
+
+fn consulta_departamento(persona_departamento: & HashMap<String,String>){
+    println!("{}", "Ingrese departamento:".green());
+    let departamento = input_text();
+    let mut vec = Vec::new();
+    for (persona, dep) in &*persona_departamento {
+        if departamento == dep.to_owned(){
+            //println!("Personas en el departamento {}:",dep);
+            vec.push(persona);
+            //println!("{}", vec.sort_by(|a,b| b.cmp(a)));
+        } else {
+            println!("{}","No existe departamento".red());
+        }
+    }
+    println!("{:?}", vec);
+}
+
+fn consulta(persona_departamento: & HashMap<String,String>){
+
+    loop {
+        intro_consulta();
+        let input_number = input_number();
+        match input_number { // Validamos las opciones
+            1 => consulta_departamento(& persona_departamento),
+            //2 => consulta(),
+            3 => break, // Salir con valor 3
+            _ => println!("{}", "No es una opcion valida.".red()),
+        };
     }
 }
 
 fn main() {
+    let mut persona_departamento: HashMap<String, String> = HashMap::new();
+
     loop {
         intro(); // Introduccion del software
         let input_number = input_number(); // Valida que el valor sea un numero
         match input_number { // Validamos las opciones
-            1 => add_user(),
+            1 => add_user(&mut persona_departamento),
+            2 => consulta(&persona_departamento),
             3 => break, // Salir con valor 3
-            _ => println!("No es una opcion valida."),
+            _ => println!("{}", "No es una opcion valida.".red()),
         };
     }
 }
