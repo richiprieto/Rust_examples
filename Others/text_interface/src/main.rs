@@ -52,7 +52,6 @@ fn input_text() -> String {
 }
 
 fn add_user(persona_departamento: &mut HashMap<String,String>) { // pasamos un hashmap mutable como parametro
-
     loop {
         println!("{}", "Ejemplo de ingreso: 'Add Amir to Sales' or 'Add Sally to Engineering'".green());
         println!("{}", "Para regresar escriba 'regresar'".green());
@@ -84,16 +83,23 @@ fn consulta_departamento(persona_departamento: & HashMap<String,String>){
     println!("{}", "Ingrese departamento:".green());
     let departamento = input_text();
     let mut vec = Vec::new();
+
     for (persona, dep) in &*persona_departamento {
         if departamento == dep.to_owned(){
-            //println!("Personas en el departamento {}:",dep);
             vec.push(persona);
-            //println!("{}", vec.sort_by(|a,b| b.cmp(a)));
-        } else {
-            println!("{}","No existe departamento".red());
+            vec.sort_by(|a,b| a.to_lowercase().cmp(&b.to_lowercase()));
         }
     }
-    println!("{:?}", vec);
+
+    if vec.len() != 0 {
+        println!("Las personas que trabajan en el departamento: {} son {:?}", departamento, vec);
+    } else {
+        println!("El departamento {} no existe", departamento.red());
+    }
+}
+
+fn consulta_compania() {
+
 }
 
 fn consulta(persona_departamento: & HashMap<String,String>){
@@ -103,7 +109,7 @@ fn consulta(persona_departamento: & HashMap<String,String>){
         let input_number = input_number();
         match input_number { // Validamos las opciones
             1 => consulta_departamento(& persona_departamento),
-            //2 => consulta(),
+            2 => consulta_compania(),
             3 => break, // Salir con valor 3
             _ => println!("{}", "No es una opcion valida.".red()),
         };
