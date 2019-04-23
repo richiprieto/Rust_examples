@@ -98,8 +98,10 @@ fn consulta_departamento(persona_departamento: & HashMap<String,String>){
     }
 }
 
-fn consulta_compania() {
-
+fn consulta_compania(persona_departamento: & HashMap<String,String>) {
+    let mut count_vec: Vec<_> = persona_departamento.iter().collect();
+    count_vec.sort_by(|a, b| b.1.cmp(a.1));
+    println!("{:?}", count_vec);
 }
 
 fn consulta(persona_departamento: & HashMap<String,String>){
@@ -109,7 +111,7 @@ fn consulta(persona_departamento: & HashMap<String,String>){
         let input_number = input_number();
         match input_number { // Validamos las opciones
             1 => consulta_departamento(& persona_departamento),
-            2 => consulta_compania(),
+            2 => consulta_compania(& persona_departamento),
             3 => break, // Salir con valor 3
             _ => println!("{}", "No es una opcion valida.".red()),
         };
