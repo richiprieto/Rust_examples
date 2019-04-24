@@ -100,7 +100,7 @@ fn consulta_departamento(persona_departamento: & HashMap<String,String>){
 
 fn consulta_compania(persona_departamento: & HashMap<String,String>) {
     let mut count_vec: Vec<_> = persona_departamento.iter().collect();
-    count_vec.sort_by(|a, b| b.1.cmp(a.1));
+    count_vec.sort_by(|a, b| b.1.cmp(a.1)); //sort by departamento
     println!("{:?}", count_vec);
 }
 
