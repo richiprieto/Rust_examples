@@ -87,6 +87,7 @@ fn consulta_departamento(persona_departamento: & HashMap<String,String>){
     for (persona, dep) in &*persona_departamento {
         if departamento == dep.to_owned(){
             vec.push(persona);
+            // Sort por nombre para que este correcto ponemos todos los nombres en lowercase
             vec.sort_by(|a,b| a.to_lowercase().cmp(&b.to_lowercase()));
         }
     }
